@@ -1,0 +1,9 @@
+name: unittest
+
+on:
+  commit, pull_request:
+    branches: main, master
+jobs:
+  runs-on: ubuntu-latest
+  run:
+    python -m fibo.py
