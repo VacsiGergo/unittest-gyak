@@ -14,15 +14,13 @@ def fibo(n:int):
 
 print(fibo(szam))
 
-class FiboTest(unittest.TestCase):
-    def basicRun(self):
+class TestFibo(unittest.TestCase):
+    def test_basicRun(self):
         self.assertEqual(fibo(4), 3)
-    def minusGiven(self):
-        self.minusGiven(fibo(-2), 0)
-    def wrongNumber(self):
-        self.assertGreater(fibo(0.2), 0)
-    def lessEqual(self):
-        self.assertLessEqual(fibo(4), 3)
+    def test_wrongNumber(self):
+        self.assertEqual(fibo(0.2), 0)
+    def test_lessEqual(self):
+        self.assertEqual(fibo(4), 3)
 
 
 if __name__ == '__main__':
