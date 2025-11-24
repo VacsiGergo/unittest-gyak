@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Git Checkout
-        uses: 
+        uses: actions/checkout@v5
 
       - name: Set up python
         uses: actions/setup-python@v4
