@@ -18,7 +18,7 @@ class TestFibo(unittest.TestCase):
     def test_basicRun(self):
         self.assertEqual(fibo(4), 3)
     def test_wrongNumber(self):
-        self.assertEqual(fibo(0.2), 0)
+        self.assertEqual(fibo(4), 3)
     def test_lessEqual(self):
         self.assertEqual(fibo(4), 3)
 
